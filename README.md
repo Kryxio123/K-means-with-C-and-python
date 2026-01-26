@@ -8,13 +8,16 @@ Requirements
 How to run 
 
 Activate your python venv
+
 Within K-means folder
+
 use Make (An error regarding unused parameter shows up
           ignore it)
 cd python
 python main.py 
 
 (OPTIONALLY) export OMP_NUM_THREADS = 8
+
 the above will give a slightly faster speed
 since it will set your threads to 8 
 
