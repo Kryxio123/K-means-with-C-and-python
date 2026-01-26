@@ -1,6 +1,6 @@
 K-means in C with Python Bindings
 
-Requirements
+**Requirements**
 
 -Linux
 
@@ -10,7 +10,7 @@ Requirements
 
 --gcc 13.3.0
 
-How to run 
+**How to run **
 
 Activate your python venv
 
@@ -26,7 +26,7 @@ python main.py
 the above will give a slightly faster speed
 since it will set your threads to 8 
 
-Working 
+**Working **
 
 Implemented K-means completely in C and used the K-means
 in python using Cpython api, attemped multithreading with 
@@ -34,7 +34,7 @@ OpenMP
 
 -Benchmarked against Unoptimized Numpy baseline
 
-Project Structure
+**Project Structure**
 
 K-means/
 
@@ -52,11 +52,14 @@ K-means/
 
 --wrapper.py #wrapper function
 
-Makefile
+-Makefile
 
-Example output With threads = 8
+**Example output With threads = 8**
 
 (venv) sneh2604@DESKTOP-VAO24N9:~/K-means/python$ python main.py
+
 NumPy time: 3.900s
+
 C-extension time: 0.316s
+
 Speedup: 12.34x
