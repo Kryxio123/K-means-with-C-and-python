@@ -1,9 +1,13 @@
 K-means in C with Python Bindings
 
 Requirements
+
 -Linux
+
 -Python 3.12
+
 -Numpy
+
 --gcc 13.3.0
 
 How to run 
@@ -28,18 +32,27 @@ Implemented K-means completely in C and used the K-means
 in python using Cpython api, attemped multithreading with 
 OpenMP
 
-Benchmarked against Unoptimized Numpy baseline
+-Benchmarked against Unoptimized Numpy baseline
 
 Project Structure
+
 K-means/
+
 -C/
+
 --K-means.h #function declarations
+
 --K-means.c #The core of K-means
+
 --bindings.c # Bindings to connect python and C
+
 -python/
+
 --main.py #main benchmarking script
+
 --wrapper.py #wrapper function
--Makefile
+
+Makefile
 
 Example output With threads = 8
 
